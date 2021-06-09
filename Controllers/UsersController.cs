@@ -28,8 +28,8 @@ namespace ThanksCardAPI.Controllers
             return await _context.Users
                                     .Include(User => User.Department)
                                     .ToListAsync();
-            //return await _context.Users.ToListAsync();
         }
+        
 
         // GET: api/Users/5
         [HttpGet("{id}")]

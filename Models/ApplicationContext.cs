@@ -14,5 +14,7 @@ namespace ThanksCardAPI.Models
         public DbSet<Department> Departments { get; set; }
         public DbSet<ThanksCard> ThanksCards{ get; set; }
         public DbSet<ThanksCardAPI.Models.Tag> Tag { get; set; }
+        //public object Division { get; internal set; }
+        public DbSet<Division> Divisions { get; set; }
     }
 }
